@@ -10,7 +10,6 @@ const StatisticsLine = ({ text, value }) => {
       <td>{text}</td>
       <td>{value}</td>
     </tr>
-    // <div>{text}: {value}</div>
   );
 };
 
@@ -55,9 +54,6 @@ const App = () => {
       <Button text="Good" handleClick={handleClickGood} />
       <Button text="Neutral" handleClick={handleClickNeutral} />
       <Button text="Bad" handleClick={handleClickBad} />
-      {/* <button onClick={handleClickGood}>Good</button>
-      <button onClick={handleClickNeutral}>Neutral</button>
-      <button onClick={handleClickBad}>Bad</button> */}
       <Statistics good={good} neutral={neutral} bad={bad} />
     </div>
   );
